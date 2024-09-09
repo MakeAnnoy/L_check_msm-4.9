@@ -88,7 +88,7 @@ static bool scm_dload_supported;
 static struct kobject dload_kobj;
 static void *dload_type_addr;
 
-static bool warm_reset = true;
+static bool warm_reset;
 module_param(warm_reset, bool, 0644);
 MODULE_PARM_DESC(warm_reset, "Set 1 to override default cold-reset");
 
